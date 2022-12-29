@@ -1,3 +1,7 @@
+:root {
+  --bgcolor: rgb(163, 255, 224);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -15,7 +19,16 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 0;
+  margin: 10;
+  text-align: center;
+}
+
+h1 {
+  font-size: 69px;
+}
+
+h2 {
+  font-size: 35px;
 }
 
 p {
@@ -25,10 +38,37 @@ p {
 #headshot {
   max-height: 300px;
   max-width: 210px;
-  position: 
 }
 
 .hero-banner {
-  display: flex;
-  justify-content: center;
+  background-color: var(--bgcolor);
+}
+
+.workpics {
+  min-width: 400px;
+  max-width: 400px;
+  max-height: 250px;
+  margin: 20px;
+  border: 100px;
+  border-radius: 30px;
+  transition: all 0.25s ease-in-out;
+}
+
+.workpics:hover {
+  box-shadow: inset 0px 0px 10px var(--bgcolor), 0px 0 40px rgb(0, 153, 255);
+}
+
+#work {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: 
+  "prework caterpillar-form css-cheatsheet"
+  "work4 work5 work6";
+}
+
+footer {
+  background-color: var(--bgcolor);
+  text-align: center;
+  padding: 50px;
 }
