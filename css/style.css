@@ -1,5 +1,6 @@
 :root {
-  --bgcolor: rgb(198, 254, 235);
+  --bgcolor: rgb(159, 255, 223);
+  background-color: rgb(236, 250, 246);
 }
 
 html {
@@ -37,11 +38,6 @@ h2 {
   font-size: 40px;
 }
 
-p {
-  margin: 10px;
-  font-size: 30px;
-}
-
 #headshot {
   position: absolute;
   top: 15px;
@@ -53,17 +49,17 @@ p {
 
 .hero-banner {
   background-color: var(--bgcolor);
+  justify-content: end;
 }
 
 nav {
   display: flex;
   justify-content: space-around;
+  margin: 10px;
+  font-size: 30px;
 }
 
 .workpics {
-  min-width: 400px;
-  max-width: 400px;
-  max-height: 250px;
   margin: 20px;
   border: 100px;
   border-radius: 30px;
@@ -71,18 +67,44 @@ nav {
 }
 
 .workpics:hover {
-  box-shadow: inset 0px 0px 10px var(--bgcolor), 0px 0 40px rgb(0, 153, 255);
+  box-shadow: inset 0px 0px 10px var(--bgcolor), 0px 0 40px rgb(0, 255, 170);
 }
 
 #work {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 60% 40%;
   grid-template-areas: 
-  "prework caterpillar-form css-cheatsheet"
-  "work4 work5 work6";
+  "css-cheatsheet css-cheatsheet"
+  "prework caterpillar-form";
   font-size: 20px;
   text-align: center;
+}
+
+#css-cheatsheet {
+  grid-area: css-cheatsheet;
+  text-align: center;
+  background-image: );
+}
+
+#css-cheatsheet-pic {
+  height: 450px;
+}
+
+#prework {
+  grid-area: prework;
+}
+
+#prework-pic {
+  height: 300px;
+}
+
+#caterpillar-form {
+  grid-area: caterpillar-form;
+}
+
+#caterpillar-form-pic {
+  height: 300px;
 }
 
 .work-pics-area {
@@ -95,8 +117,19 @@ nav {
   align-content: end;
 }
 
-.contact {
+#fatima {
+  max-height: 300px;
+  position: relative;
+  left: 1000px;
+  bottom: 50px;
+}
 
+#funny {
+  font-size: 30px;
+}
+
+.contact {
+ font-size: 30px;
 }
 
 footer {
